@@ -1,35 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import CompanySection from "./components/CompanySection";
+import SafePal from "./components/SafePal";
+import OurClients from "./components/OurClients";
+import Friends from "./components/Friends";
+import InfiniteSlider from "./components/InfiniteSlider";
+import Subscription from "./components/Subscription";
+import Beyond from "./components/Beyond";
+import CuttingEdge from "./components/CuttingEdge";
+import InfiniteText from "./components/InfiniteText";
+import CollectiveBunch from "./components/CollectiveBunch";
+import LetsChat from "./components/LetsChat";
+import Online from "./components/Online";
+import BigText from "./components/BigText";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
+      <div className="bg-[#e7f7fd] px-[50px] pb-[50px] rounded-b-[100px]">
+        <Header />
+        <Hero />
+        <CompanySection />
+        <SafePal />
+        <OurClients />
+        <Friends />
+        <InfiniteSlider />
+        <Subscription />
+        <Beyond />
+        <CuttingEdge />
+      </div>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <InfiniteText />
+        <CollectiveBunch />
+        <div className="px-[50px]">
+          <LetsChat />
+        </div>
+        <Online />
+        <BigText />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
