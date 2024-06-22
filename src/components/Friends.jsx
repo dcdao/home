@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const Friends = () => {
-  const [topPosition1, setTopPosition1] = useState(0);
+  const [topPosition1, setTopPosition1] = useState(-30);
   const [topPosition2, setTopPosition2] = useState(-30);
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const Friends = () => {
       </div>
       <div className="bg-black w-[558px] h-[700px] rounded-[50px] relative overflow-hidden">
         <ul
-          className="absolute -rotate-12 left-[60px]"
+          className="absolute left-[50px] "
           style={{ top: `${topPosition1}px` }}
         >
           {Array.from({ length: 16 }, (_, i) => (
@@ -46,7 +46,7 @@ const Friends = () => {
           ))}
         </ul>
         <ul
-          className="absolute right-[0] -rotate-12"
+          className="absolute right-[50px] "
           style={{ top: `${topPosition2}px` }}
         >
           {Array.from({ length: 16 }, (_, i) => (

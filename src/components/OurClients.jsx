@@ -19,14 +19,15 @@ const OurClients = () => {
       text: "“In the top 1% of companies I've ever worked with when it comes to people caring about my project.”",
     },
     {
-      type: "div",
+      type: "img",
       styles: {
         top: isVisible ? "-300px" : "400px",
         left: isVisible ? "600px" : "400px",
         config: { duration: 700 },
       },
+      src: "/images/NFT/NFT_5.png",
       className:
-        "w-[150px] h-[150px] bg-white absolute p-[20px] rounded-[50px] -rotate-12",
+        "w-[150px] h-[150px] absolute p-[20px] rounded-[50px] -rotate-12",
     },
     {
       type: "div",
@@ -75,14 +76,15 @@ const OurClients = () => {
       text: "“In the top 1% of companies I've ever worked with when it comes to people caring about my project.”",
     },
     {
-      type: "div",
+      type: "img",
       styles: {
         bottom: isVisible ? "-250px" : "400px",
         left: isVisible ? "650px" : "400px",
         config: { duration: 700 },
       },
+      src: "/images/NFT/NFT_4.png",
       className:
-        "w-[150px] h-[150px] bg-white absolute p-[20px] rounded-[50px] -rotate-12",
+        "w-[150px] h-[150px] absolute p-[20px] rounded-[50px] -rotate-12",
     },
     {
       type: "div",
@@ -96,14 +98,15 @@ const OurClients = () => {
       text: "T“In the top 1% of companies I've ever worked with when it comes to people caring about my project.”",
     },
     {
-      type: "div",
+      type: "img",
       styles: {
         bottom: isVisible ? "-250px" : "400px",
         right: isVisible ? "0" : "400px",
         config: { duration: 700 },
       },
+      src: "/images/NFT/NFT_6.png",
       className:
-        "w-[150px] h-[150px] bg-white absolute bottom-[-250px] right-[0] p-[20px] rounded-[50px] -rotate-12",
+        "w-[150px] h-[150px] absolute p-[20px] rounded-[50px] -rotate-12",
     },
     {
       type: "div",
