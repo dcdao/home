@@ -5,7 +5,7 @@ const Header = () => {
     <header className="flex items-center justify-between py-[30px] relative">
       {/* <h1 className="text-[20px] font-[700]">unfold</h1> */}
       <img src="/images/DCDAO.png" alt="" className="w-[100px] h-[100px]" />
-      <div className="w-[196px] h-[120px] bg-[yellow] rounded-b-[50%] flex items-center justify-center cursor-pointer hover:bg-[green] absolute top-0 right-[50px]">
+      <div className="w-[196px] h-[196px] bg-[yellow] rounded-full pt-[130px] text-[20px] text-center cursor-pointer hover:bg-[#64fcfc] absolute top-[-100px] right-[50px] transition-all delay-75">
         LETS CHART
       </div>
     </header>
