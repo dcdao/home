@@ -94,7 +94,7 @@ const OurClients = () => {
         config: { duration: 700 },
       },
       className:
-        "w-[500px] h-[150px] bg-white absolute bottom-[-450px] right-[150px] p-[20px] rounded-[50px] -rotate-12",
+        "w-[500px] h-[150px] bg-white absolute p-[20px] rounded-[50px] -rotate-12",
       text: "T“In the top 1% of companies I've ever worked with when it comes to people caring about my project.”",
     },
     {
