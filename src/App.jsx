@@ -17,7 +17,7 @@ import BigText from "./components/BigText";
 function App() {
   return (
     <>
-      <div className="bg-[#e7f7fd] px-[50px] pb-[50px] rounded-b-[100px]">
+      <div className="bg-[#f0efef] px-[50px] pb-[50px] rounded-b-[100px]">
         <Header />
         <Hero />
         <CompanySection />
