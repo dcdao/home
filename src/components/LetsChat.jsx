@@ -1,10 +1,8 @@
-import React from "react";
-
 const LetsChat = () => {
   return (
     <div className="w-full min-h-[375px] flex items-center justify-between bg-white transition-all delay-75 duration-200 cursor-pointer hover:bg-[#FB3B94] my-[100px] p-[50px] rounded-[50px] ">
       <div>
-        <h2 className="text-[120px] font-[600]">Let's Start Now</h2>
+        <h2 className="text-[120px] font-[600]">Lets Start Now</h2>
         <p className="mt-[10px] text-[30px] font-[500]">
           Join the community by connecting to your wallet
         </p>

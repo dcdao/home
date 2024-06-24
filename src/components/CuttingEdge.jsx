@@ -1,5 +1,3 @@
-import React from "react";
-
 const CuttingEdge = () => {
   return (
     <div className="flex items-center gap-[20px] h-[954px]">

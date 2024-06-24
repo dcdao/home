@@ -1,5 +1,3 @@
-import React from "react";
-
 const CollectiveBunch = () => {
   return (
     <div className="flex items-center justify-between px-[100px] text-white">
