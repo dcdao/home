@@ -4,10 +4,10 @@ import Hero from "./components/Hero";
 import CompanySection from "./components/CompanySection";
 import SafePal from "./components/SafePal";
 import OurClients from "./components/OurClients";
-import Friends from "./components/Friends";
+// import Friends from "./components/Friends";
 import InfiniteSlider from "./components/InfiniteSlider";
-import Subscription from "./components/Subscription";
-import Beyond from "./components/Beyond";
+// import Subscription from "./components/Subscription";
+// import Beyond from "./components/Beyond";
 import CuttingEdge from "./components/CuttingEdge";
 import InfiniteText from "./components/InfiniteText";
 import CollectiveBunch from "./components/CollectiveBunch";
@@ -24,10 +24,10 @@ function App() {
         <CompanySection />
         <SafePal />
         <OurClients />
-        <Friends />
+        {/* <Friends /> */}
         <InfiniteSlider />
-        <Subscription />
-        <Beyond />
+        {/* <Subscription /> */}
+        {/* <Beyond /> */}
         <CuttingEdge />
       </div>
       <div>
