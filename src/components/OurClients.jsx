@@ -15,7 +15,7 @@ const OurClients = () => {
         config: { duration: 700 },
       },
       className:
-        "w-[500px] h-[150px] bg-white absolute p-[20px] rounded-[50px] rotate-12",
+        "w-[500px] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] rotate-12 flex items-center",
       text: "“In the top 1% of companies I've ever worked with when it comes to people caring about my project.”",
     },
     {
@@ -37,7 +37,7 @@ const OurClients = () => {
         config: { duration: 700 },
       },
       className:
-        "w-[500px] h-[150px] bg-white absolute p-[20px] rounded-[50px] -rotate-12",
+        "w-[500px] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] -rotate-12 flex items-center",
       text: "“In the top 1% of companies I've ever worked with when it comes to people caring about my project.”",
     },
     {
@@ -72,7 +72,7 @@ const OurClients = () => {
         config: { duration: 700 },
       },
       className:
-        "w-[500px] h-[150px] bg-white absolute p-[20px] rounded-[50px] rotate-12",
+        "w-[500px] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] rotate-12 flex items-center",
       text: "“In the top 1% of companies I've ever worked with when it comes to people caring about my project.”",
     },
     {
@@ -94,7 +94,7 @@ const OurClients = () => {
         config: { duration: 700 },
       },
       className:
-        "w-[500px] h-[150px] bg-white absolute p-[20px] rounded-[50px] -rotate-12",
+        "w-[500px] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] -rotate-12 flex items-center",
       text: "T“In the top 1% of companies I've ever worked with when it comes to people caring about my project.”",
     },
     {
@@ -116,7 +116,7 @@ const OurClients = () => {
         config: { duration: 700 },
       },
       className:
-        "w-[300px] h-[150px] bg-white absolute p-[20px] rounded-[50px] rotate-12",
+        "w-[300px] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] rotate-12 flex items-center",
       text: "“In the top 1% of companies I've ever worked with when it comes to people caring about my project.”",
     },
   ];
@@ -148,14 +148,14 @@ const OurClients = () => {
 
   return (
     <div
-      className="flex items-center justify-center my-[600px] flex-col relative transition-all delay-75"
+      className="flex items-center justify-center mt-[400px] mb-[600px] flex-col relative transition-all delay-75"
       ref={componentRef}
     >
       {animatedElements}
-      <h2 className="text-[90px] text-center w-[938px]">
+      <h2 className="text-[90px] text-center w-[938px] font-[600] leading-[120px]">
         Our Clients Can’t Say Enough About Us.
       </h2>
-      <p className="mt-[30px] text-[30px] w-[512px] text-center">
+      <p className="mt-[30px] text-[30px] w-[512px] text-center font-[500]">
         Take a look for yourself. No Slack messages were harmed in the making of
         this component.
       </p>
