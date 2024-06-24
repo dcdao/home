@@ -11,7 +11,7 @@ const OurClients = () => {
       type: "div",
       styles: {
         top: isVisible ? "-70%" : "50%",
-        left: isVisible ? "0" : "50%",
+        left: isVisible ? "5%" : "50%",
         config: { duration: 700 },
       },
       className:
@@ -33,7 +33,7 @@ const OurClients = () => {
       type: "div",
       styles: {
         top: isVisible ? "-70%" : "50%",
-        right: isVisible ? "5%" : "50%",
+        right: isVisible ? "13%" : "50%",
         config: { duration: 700 },
       },
       className:
@@ -79,7 +79,7 @@ const OurClients = () => {
       type: "img",
       styles: {
         bottom: isVisible ? "-55%" : "50%",
-        left: isVisible ? "45%" : "50%",
+        left: isVisible ? "35%" : "50%",
         config: { duration: 700 },
       },
       src: "/images/NFT/NFT_4.png",
@@ -90,7 +90,7 @@ const OurClients = () => {
       type: "div",
       styles: {
         bottom: isVisible ? "-90%" : "50%",
-        right: isVisible ? "15%" : "50%",
+        right: isVisible ? "20%" : "50%",
         config: { duration: 700 },
       },
       className:

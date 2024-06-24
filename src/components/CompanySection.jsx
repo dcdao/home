@@ -26,7 +26,7 @@ const CompanySection = () => {
   return (
     <div className="flex items-center justify-between my-[100px] gap-[200px]">
       <div className="text-[40px] font-[500] relative">
-        Mint, keep, share and transfer your favorit NFTs with our new community
+        Mint, keep, share and transfer your favorite NFTs with our new community
         <img
           src="/images/NFT/NFT_1.png"
           className="absolute text-[0] top-[0] bottom-0 my-auto right-[-40%] transition-all w-[150px] h-[150px] rounded-[50%]"

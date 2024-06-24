@@ -8,3 +8,20 @@ html {
 body {
   background: black;
 }
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 12px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: black;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #fb3b94;
+  border-radius: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #ff66b2;
+}
