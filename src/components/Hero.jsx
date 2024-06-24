@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="relative bg-[url('/images/hero.png')] h-[100vh] bg-center bg-no-repeat bg-cover p-[2vw] flex items-center justify-between">
+    <div className="relative bg-[url('/images/hero.png')] h-[100vh] bg-center bg-no-repeat bg-cover p-[2vw] flex items-center justify-between lg:flex-col 2xl:flex-row">
       <h1 className="text-[160px] font-[600] leading-[200px] text-[#fff]">
         Darwinia <br /> Community
         <br /> DAO

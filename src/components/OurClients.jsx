@@ -10,19 +10,19 @@ const OurClients = () => {
     {
       type: "div",
       styles: {
-        top: isVisible ? "-300px" : "400px",
-        left: isVisible ? "0" : "400px",
+        top: isVisible ? "-70%" : "50%",
+        left: isVisible ? "0" : "50%",
         config: { duration: 700 },
       },
       className:
-        "w-[500px] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] rotate-12 flex items-center",
+        "w-[26vw] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] rotate-12 flex items-center",
       text: "“In the top 1% of companies I've ever worked with when it comes to people caring about my project.”",
     },
     {
       type: "img",
       styles: {
-        top: isVisible ? "-300px" : "400px",
-        left: isVisible ? "600px" : "400px",
+        top: isVisible ? "-70%" : "50%",
+        left: isVisible ? "40%" : "50%",
         config: { duration: 700 },
       },
       src: "/images/NFT/NFT_5.png",
@@ -32,54 +32,54 @@ const OurClients = () => {
     {
       type: "div",
       styles: {
-        top: isVisible ? "-300px" : "400px",
-        right: isVisible ? "30px" : "400px",
+        top: isVisible ? "-70%" : "50%",
+        right: isVisible ? "5%" : "50%",
         config: { duration: 700 },
       },
       className:
-        "w-[500px] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] -rotate-12 flex items-center",
+        "w-[26vw] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] -rotate-12 flex items-center",
       text: "“In the top 1% of companies I've ever worked with when it comes to people caring about my project.”",
     },
     {
       type: "img",
       styles: {
-        top: isVisible ? "-50px" : "400px",
-        left: isVisible ? "0" : "400px",
+        top: isVisible ? "-10%" : "50%",
+        left: isVisible ? "0" : "50%",
         transform: isVisible ? "rotate(-45deg)" : "none",
         config: { duration: 700 },
       },
       src: "/images/DCDAO.png",
       alt: "",
-      className: "absolute w-[150px] h-[150px]",
+      className: "absolute w-[9.76vw] h-[9.76vw]",
     },
     {
       type: "img",
       styles: {
-        top: isVisible ? "-50px" : "400px",
-        right: isVisible ? "0" : "400px",
+        top: isVisible ? "-10%" : "50%",
+        right: isVisible ? "0" : "50%",
         transform: isVisible ? "rotate(45deg)" : "none",
         config: { duration: 700 },
       },
       src: "/images/DCDAO.png",
       alt: "",
-      className: "absolute w-[150px] h-[150px]",
+      className: "absolute w-[9.76vw] h-[9.76vw]",
     },
     {
       type: "div",
       styles: {
-        bottom: isVisible ? "-300px" : "400px",
-        left: isVisible ? "0" : "400px",
+        bottom: isVisible ? "-60%" : "50%",
+        left: isVisible ? "0" : "50%",
         config: { duration: 700 },
       },
       className:
-        "w-[500px] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] rotate-12 flex items-center",
+        "w-[26vw] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] rotate-12 flex items-center",
       text: "“In the top 1% of companies I've ever worked with when it comes to people caring about my project.”",
     },
     {
       type: "img",
       styles: {
-        bottom: isVisible ? "-250px" : "400px",
-        left: isVisible ? "650px" : "400px",
+        bottom: isVisible ? "-55%" : "50%",
+        left: isVisible ? "45%" : "50%",
         config: { duration: 700 },
       },
       src: "/images/NFT/NFT_4.png",
@@ -89,19 +89,19 @@ const OurClients = () => {
     {
       type: "div",
       styles: {
-        bottom: isVisible ? "-450px" : "400px",
-        right: isVisible ? "150px" : "400px",
+        bottom: isVisible ? "-90%" : "50%",
+        right: isVisible ? "15%" : "50%",
         config: { duration: 700 },
       },
       className:
-        "w-[500px] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] -rotate-12 flex items-center",
+        "w-[26vw] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] -rotate-12 flex items-center",
       text: "T“In the top 1% of companies I've ever worked with when it comes to people caring about my project.”",
     },
     {
       type: "img",
       styles: {
-        bottom: isVisible ? "-250px" : "400px",
-        right: isVisible ? "0" : "400px",
+        bottom: isVisible ? "-80%" : "50%",
+        right: isVisible ? "0" : "50%",
         config: { duration: 700 },
       },
       src: "/images/NFT/NFT_6.png",
@@ -111,12 +111,12 @@ const OurClients = () => {
     {
       type: "div",
       styles: {
-        bottom: isVisible ? "0" : "400px",
-        right: isVisible ? "0" : "400px",
+        bottom: isVisible ? "0" : "50%",
+        right: isVisible ? "0" : "50%",
         config: { duration: 700 },
       },
       className:
-        "w-[300px] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] rotate-12 flex items-center",
+        "w-[21vw] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] rotate-12 flex items-center",
       text: "“In the top 1% of companies I've ever worked with when it comes to people caring about my project.”",
     },
   ];
@@ -148,7 +148,7 @@ const OurClients = () => {
 
   return (
     <div
-      className="flex items-center justify-center mt-[400px] mb-[600px] flex-col relative transition-all delay-75"
+      className="flex items-center justify-center mt-[50%] mb-[600px] flex-col relative transition-all delay-75"
       ref={componentRef}
     >
       {animatedElements}

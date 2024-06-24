@@ -29,7 +29,7 @@ const CompanySection = () => {
         Mint, keep, share and transfer your favorit NFTs with our new community
         <img
           src="/images/NFT/NFT_1.png"
-          className="absolute text-[0] top-[0] bottom-0 my-auto right-[-140px] transition-all w-[150px] h-[150px] rounded-[50%]"
+          className="absolute text-[0] top-[0] bottom-0 my-auto right-[-40%] transition-all w-[150px] h-[150px] rounded-[50%]"
           style={{ transform: `rotateZ(${rotation}deg)` }}
         />
       </div>
