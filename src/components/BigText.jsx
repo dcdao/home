@@ -1,9 +1,10 @@
-import React from "react";
-
 const BigText = () => {
   return (
-    <div>
-      <h2 className="text-[464px] text-center text-white">DAO</h2>
+    <div className="flex items-center justify-center py-[5vh]">
+      <img
+        src="/images/DCDAO.png"
+        className="w-[50vw] h-[40vh] object-contain"
+      />
     </div>
   );
 };

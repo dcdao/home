@@ -5,7 +5,7 @@ const InfiniteText = () => {
     <div className="py-[2.5rem] my-[100px]">
       <div className="flex overflow-hidden">
         <div className="flex animate-loop-scroll">
-          <h4 className="text-white text-[160px] max-w-none object-contain w-[120rem]">
+          <h4 className="text-white text-[160px] max-w-none object-contain w-[120rem] font-bold">
             We make things Better
           </h4>
         </div>

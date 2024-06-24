@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import CompanySection from "./components/CompanySection";
@@ -12,7 +11,7 @@ import CuttingEdge from "./components/CuttingEdge";
 import InfiniteText from "./components/InfiniteText";
 import CollectiveBunch from "./components/CollectiveBunch";
 import LetsChat from "./components/LetsChat";
-import Online from "./components/Online";
+// import Online from "./components/Online";
 import BigText from "./components/BigText";
 
 function App() {
@@ -36,7 +35,6 @@ function App() {
         <div className="px-[50px]">
           <LetsChat />
         </div>
-        <Online />
         <BigText />
       </div>
     </>

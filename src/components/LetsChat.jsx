@@ -2,14 +2,16 @@ import React from "react";
 
 const LetsChat = () => {
   return (
-    <div className="w-full min-h-[375px] flex items-center justify-between bg-[yellow] transition-all delay-75 cursor-pointer hover:bg-[#59f9ec] my-[100px] p-[50px] rounded-[50px] ">
+    <div className="w-full min-h-[375px] flex items-center justify-between bg-white transition-all delay-75 duration-200 cursor-pointer hover:bg-[#FB3B94] my-[100px] p-[50px] rounded-[50px] ">
       <div>
-        <h2 className="text-[120px]">Lets Chat</h2>
-        <p className="mt-[10px] text-[30px]">
-          Want to grab a virtual coffee and talk about your project?
+        <h2 className="text-[120px] font-[600]">Let's Start Now</h2>
+        <p className="mt-[10px] text-[30px] font-[500]">
+          Join the community by connecting to your wallet
         </p>
       </div>
-      <div className="w-[200px] h-[200px] rounded-full bg-white"></div>
+      <button className="w-[200px] h-[200px] rounded-full bg-black text-white text-[40px] font-[600] hover:scale-[1.05] duration-300">
+        Start
+      </button>
     </div>
   );
 };

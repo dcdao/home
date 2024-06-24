@@ -5,14 +5,15 @@ const CollectiveBunch = () => {
     <div className="flex items-center justify-between px-[100px] text-white">
       <div className="w-[716px]">
         <p className="text-[40px]">
-          We’re Unfold. A collective bunch working on incredible projects and
-          building enduring partnerships that extend well beyond the
-          deliverable.
+          We’re Darwinia Community DAO. A Crypto based service with brilliant
+          offers for making the CRYPTO experience fun deliverable.
         </p>
         <p className="text-[40px] mt-[40px]">
-          Want to collaborate with a super down-to-earth, mad- talented team?
-          Hit us up!
+          Join Us and enjoy your Crypto journey
         </p>
+        <button className="bg-white text-black text-[28px] font-[500] w-[240px] h-[60px] rounded-[30px] mt-[20px] hover:scale-[1.05] duration-300">
+          Join
+        </button>
       </div>
       <ul>
         <li className="text-[20px]">Dribbble</li>
