@@ -55,15 +55,17 @@ const SafePal = () => {
   };
 
   return (
-    <div className="bg-black rounded-[50px] min-h-[742px] px-[50px] py-[20px]">
-      <h2 className="text-white text-[120px] font-bold">SafePal</h2>
-      <p className="text-white text-[30px] font-[600]">
+    <div className="bg-black rounded-[20px] lg:rounded-[50px] min-h-[742px] px-[20px] lg:px-[50px] py-[20px]">
+      <h2 className="text-white text-[40px] lg:text-[120px] font-bold">
+        SafePal
+      </h2>
+      <p className="text-white text-[20px] lg:text-[30px] font-[600]">
         Making your crypto experience safe and fun.
       </p>
       <div className="relative flex items-center justify-center w-full">
         <button
           onClick={handlePrev}
-          className="absolute left-0 bg-white rounded-full p-2"
+          className="absolute left-0 bg-white rounded-full p-2 lg:p-4"
         >
           {"<"}
         </button>
@@ -74,29 +76,30 @@ const SafePal = () => {
           {images.map((image, index) => (
             <div
               key={index}
-              className="p-[30px] flex-shrink-0"
-              style={{ width: "340px" }} // Adjust based on your image width and padding
+              className="p-[10px] lg:p-[30px] flex-shrink-0"
+              style={{ width: "100%", maxWidth: "340px" }} // Adjust based on your image width and padding
             >
               <animated.img
                 style={useSpring({
-                  width: index === activeIndex ? "400px" : "300px",
+                  width: index === activeIndex ? "90%" : "80%",
+                  maxWidth: index === activeIndex ? "400px" : "300px",
                 })}
                 src={image.src}
                 alt={image.alt}
-                className={`h-[500px] object-contain cursor-pointer`}
+                className={`h-[300px] lg:h-[500px] object-contain cursor-pointer`}
                 onClick={() => handleImageClick(index)}
               />
               {index === activeIndex && (
-                <div className="flex items-center justify-between mt-4">
-                  <div className="flex items-center gap-[10px] justify-center">
-                    <button className="bg-[#FB3B94] text-[#fff] rounded-[30px] px-[15px] py-[8px] font-[500] hover:scale-[1.1] duration-300">
+                <div className="flex items-center justify-between mt-4 flex-col lg:flex-row">
+                  <div className="flex items-center gap-[5px] lg:gap-[10px] justify-center">
+                    <button className="bg-[#FB3B94] text-[#fff] rounded-[15px] lg:rounded-[30px] px-[10px] lg:px-[15px] py-[5px] lg:py-[8px] font-[500] hover:scale-[1.1] duration-300 hidden lg:block">
                       Test
                     </button>
-                    <button className="bg-[#FB3B94] text-[#fff] rounded-[30px] px-[15px] py-[8px] font-[500] hover:scale-[1.1] duration-300">
+                    <button className="bg-[#FB3B94] text-[#fff] rounded-[15px] lg:rounded-[30px] px-[10px] lg:px-[15px] py-[5px] lg:py-[8px] font-[500] hover:scale-[1.1] duration-300 hidden lg:block">
                       Test
                     </button>
                   </div>
-                  <button className="bg-[white] rounded-[30px] px-[40px] py-[8px] font-[500] hover:scale-[1.1] duration-300">
+                  <button className="bg-[white] rounded-[15px] lg:rounded-[30px] px-[20px] lg:px-[40px] py-[5px] lg:py-[8px] font-[500] hover:scale-[1.1] duration-300">
                     View
                   </button>
                 </div>
@@ -106,7 +109,7 @@ const SafePal = () => {
         </div>
         <button
           onClick={handleNext}
-          className="absolute right-0 bg-white rounded-full p-2"
+          className="absolute right-0 bg-white rounded-full p-2 lg:p-4"
         >
           {">"}
         </button>

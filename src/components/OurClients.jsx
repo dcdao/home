@@ -15,7 +15,7 @@ const OurClients = () => {
         config: { duration: 700 },
       },
       className:
-        "w-[26vw] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] rotate-12 flex items-center",
+        "lg:w-[26vw] lg:h-[150px] bg-black text-white lg:absolute p-[20px] rounded-[50px] lg:rotate-12 flex items-center",
       text: "“In the top 1% of companies I've ever worked with when it comes to people caring about my project.”",
     },
     {
@@ -27,7 +27,7 @@ const OurClients = () => {
       },
       src: "/images/NFT/NFT_5.png",
       className:
-        "w-[150px] h-[150px] absolute p-[20px] rounded-[50px] -rotate-12",
+        "w-[150px] h-[150px] lg:absolute p-[20px] rounded-[50px] lg:-rotate-12 hidden lg:block",
     },
     {
       type: "div",
@@ -37,7 +37,7 @@ const OurClients = () => {
         config: { duration: 700 },
       },
       className:
-        "w-[26vw] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] -rotate-12 flex items-center",
+        "lg:w-[26vw] lg:h-[150px] bg-black text-white lg:absolute p-[20px] rounded-[50px] lg:-rotate-12 flex items-center",
       text: "“In the top 1% of companies I've ever worked with when it comes to people caring about my project.”",
     },
     {
@@ -50,7 +50,7 @@ const OurClients = () => {
       },
       src: "/images/DCDAO.png",
       alt: "",
-      className: "absolute w-[9.76vw] h-[9.76vw]",
+      className: "lg:absolute w-[9.76vw] h-[9.76vw] hidden lg:block",
     },
     {
       type: "img",
@@ -62,7 +62,7 @@ const OurClients = () => {
       },
       src: "/images/DCDAO.png",
       alt: "",
-      className: "absolute w-[9.76vw] h-[9.76vw]",
+      className: "lg:absolute w-[9.76vw] h-[9.76vw] hidden lg:block",
     },
     {
       type: "div",
@@ -72,7 +72,7 @@ const OurClients = () => {
         config: { duration: 700 },
       },
       className:
-        "w-[26vw] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] rotate-12 flex items-center",
+        "lg:w-[26vw] lg:h-[150px] bg-black text-white lg:absolute p-[20px] rounded-[50px] lg:rotate-12 flex items-center",
       text: "“In the top 1% of companies I've ever worked with when it comes to people caring about my project.”",
     },
     {
@@ -84,7 +84,7 @@ const OurClients = () => {
       },
       src: "/images/NFT/NFT_4.png",
       className:
-        "w-[150px] h-[150px] absolute p-[20px] rounded-[50px] -rotate-12",
+        "w-[150px] h-[150px] lg:absolute p-[20px] rounded-[50px] lg:-rotate-12 hidden lg:block",
     },
     {
       type: "div",
@@ -94,7 +94,7 @@ const OurClients = () => {
         config: { duration: 700 },
       },
       className:
-        "w-[26vw] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] -rotate-12 flex items-center",
+        "lg:w-[26vw] lg:h-[150px] bg-black text-white lg:absolute p-[20px] rounded-[50px] lg:-rotate-12 flex items-center",
       text: "T“In the top 1% of companies I've ever worked with when it comes to people caring about my project.”",
     },
     {
@@ -106,7 +106,7 @@ const OurClients = () => {
       },
       src: "/images/NFT/NFT_6.png",
       className:
-        "w-[150px] h-[150px] absolute p-[20px] rounded-[50px] -rotate-12",
+        "w-[150px] h-[150px] lg:absolute p-[20px] rounded-[50px] lg:-rotate-12 hidden lg:block",
     },
     {
       type: "div",
@@ -116,7 +116,7 @@ const OurClients = () => {
         config: { duration: 700 },
       },
       className:
-        "w-[21vw] h-[150px] bg-black text-white absolute p-[20px] rounded-[50px] rotate-12 flex items-center",
+        "lg:w-[21vw] lg:h-[150px] bg-black text-white lg:absolute p-[20px] rounded-[50px] lg:rotate-12 flex items-center",
       text: "“In the top 1% of companies I've ever worked with when it comes to people caring about my project.”",
     },
   ];
@@ -148,14 +148,14 @@ const OurClients = () => {
 
   return (
     <div
-      className="flex items-center justify-center mt-[50%] mb-[600px] flex-col relative transition-all delay-75"
+      className="flex items-center justify-center mt-[50%] lg:mb-[600px] flex-col relative transition-all delay-75 gap-[20px] lg:gap-0"
       ref={componentRef}
     >
       {animatedElements}
-      <h2 className="text-[90px] text-center w-[938px] font-[600] leading-[120px]">
+      <h2 className="text-[30px] lg:text-[90px] text-center lg:w-[938px] font-[600] lg:leading-[120px]">
         Our Clients Can’t Say Enough About Us.
       </h2>
-      <p className="mt-[30px] text-[30px] w-[512px] text-center font-[500]">
+      <p className="mt-[30px] text-[16px] lg:text-[30px] lg:w-[512px] text-center font-[500]">
         Take a look for yourself. No Slack messages were harmed in the making of
         this component.
       </p>

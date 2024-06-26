@@ -1,10 +1,10 @@
 const Hero = () => {
   return (
-    <div className="relative bg-[url('/images/hero.webp')] h-[100vh] bg-center bg-no-repeat bg-cover p-[2vw] flex items-center justify-between lg:flex-col 2xl:flex-row">
+    <div className="relative bg-[url('/images/hero.webp')] lg:h-[100vh] bg-center bg-no-repeat bg-cover p-[2vw] flex flex-col items-center gap-[20px] lg:gap-0 lg:justify-between lg:flex-col 2xl:flex-row">
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
-      <h1 className="relative text-[160px] font-[600] leading-[200px] text-[#fff] z-10">
+      <h1 className="relative text-[40px] lg:text-[160px] font-[600] lg:leading-[200px] text-[#fff] z-10">
         Darwinia <br /> Community
         <br /> DAO
       </h1>
