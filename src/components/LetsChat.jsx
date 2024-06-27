@@ -1,6 +1,6 @@
 const LetsChat = () => {
   return (
-    <div className="w-full min-h-[375px] flex items-center justify-between flex-col lg:flex-row bg-white transition-all delay-75 duration-200 cursor-pointer hover:bg-[#FB3B94] my-[100px] p-[50px] rounded-[50px] gap-[20px] lg:gap-0 ">
+    <div className="w-full min-h-[375px] flex items-center justify-between flex-col lg:flex-row bg-white transition-all delay-75 duration-200 cursor-pointer hover:bg-[#FB3B94] mt-[50px] lg:my-[100px] p-[50px] rounded-[50px] gap-[20px] lg:gap-0 ">
       <div>
         <h2 className="text-[40px] lg:text-[120px] font-[600]">
           Lets Start Now

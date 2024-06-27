@@ -31,7 +31,7 @@ const SafePal = () => {
   const handleScroll = () => {
     const scrollTop = window.scrollY;
     const windowHeight = window.innerHeight;
-    const newIndex = Math.round((scrollTop + windowHeight / 2) / windowHeight);
+    const newIndex = Math.floor(scrollTop / windowHeight / 0.2);
     setActiveIndex(newIndex % images.length);
   };
 

@@ -4,7 +4,7 @@ const Hero = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
-      <h1 className="relative text-[40px] lg:text-[160px] font-[600] lg:leading-[200px] text-[#fff] z-10">
+      <h1 className="relative text-[40px] lg:text-[160px] font-[600] lg:leading-[200px] text-[#fff] z-10 text-center lg:text-left">
         Darwinia <br /> Community
         <br /> DAO
       </h1>

@@ -148,7 +148,7 @@ const OurClients = () => {
 
   return (
     <div
-      className="flex items-center justify-center mt-[50%] lg:mb-[600px] flex-col relative transition-all delay-75 gap-[20px] lg:gap-0"
+      className="flex items-center justify-center mt-[32%] lg:mb-[600px] flex-col relative transition-all delay-75 gap-[20px] lg:gap-0"
       ref={componentRef}
     >
       {animatedElements}
