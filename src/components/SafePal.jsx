@@ -65,7 +65,7 @@ const SafePal = () => {
       <div className="relative flex items-center justify-center w-full">
         <button
           onClick={handlePrev}
-          className="absolute left-0 bg-white rounded-full p-2 lg:p-4"
+          className="absolute left-0 bg-white rounded-full p-2 lg:p-4 hidden lg:block"
         >
           {"<"}
         </button>
@@ -109,7 +109,7 @@ const SafePal = () => {
         </div>
         <button
           onClick={handleNext}
-          className="absolute right-0 bg-white rounded-full p-2 lg:p-4"
+          className="absolute right-0 bg-white rounded-full p-2 lg:p-4 hidden lg:block"
         >
           {">"}
         </button>
