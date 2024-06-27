@@ -56,10 +56,10 @@ const SafePal = () => {
 
   return (
     <div className="bg-black rounded-[20px] lg:rounded-[50px] min-h-[742px] px-[20px] lg:px-[50px] py-[20px]">
-      <h2 className="text-white text-[40px] lg:text-[120px] font-bold">
+      <h2 className="text-white text-[30px] lg:text-[120px] font-bold">
         SafePal
       </h2>
-      <p className="text-white text-[20px] lg:text-[30px] font-[600]">
+      <p className="text-white text-[16px] lg:text-[30px] font-[600]">
         Making your crypto experience safe and fun.
       </p>
       <div className="relative flex items-center justify-center w-full">

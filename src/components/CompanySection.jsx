@@ -25,7 +25,7 @@ const CompanySection = () => {
   }, []);
   return (
     <div className="flex items-center justify-center lg:justify-between flex-col lg:flex-row my-[100px] gap-[40px] lg:gap-[200px]">
-      <div className="text-[40px] font-[500] relative text-center lg:text-left flex items-center justify-center lg:block flex-col gap-[20px] lg:gap-0">
+      <div className="text-[20px] lg:text-[40px] font-[500] relative text-center lg:text-left flex items-center justify-center lg:block flex-col gap-[20px] lg:gap-0">
         Mint, keep, share and transfer your favorite NFTs with our new community
         <img
           src="/images/NFT/NFT_1.png"
