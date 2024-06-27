@@ -13,14 +13,14 @@ const CollectiveBunch = () => {
           Join
         </button>
       </div>
-      <ul className="flex flex-col items-center justify-center gap-[20px] lg:block">
+      <ul className="flex flex-wrap items-center justify-center gap-[20px] lg:block">
         <li className="text-[20px]">Dribbble</li>
         <li className="text-[20px]">Instagram</li>
         <li className="text-[20px]">X</li>
         <li className="text-[20px]">Facebook</li>
         <li className="text-[20px]">LinkedIn</li>
-        <li className="mt-[40px] text-[20px]">Work</li>
-        <li className="mb-[40px] text-[20px]">About</li>
+        <li className="lg:mt-[40px] text-[20px]">Work</li>
+        <li className="lg:mb-[40px] text-[20px]">About</li>
         <li className="text-[20px] lg:w-[233px] text-center lg:text-left">
           Unfold HQ 5920 Pan American Blvd Suite 205, North Port, Florida, 34287
         </li>
