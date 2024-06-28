@@ -31,8 +31,9 @@ const SafePal = () => {
   const handleScroll = () => {
     const scrollTop = window.scrollY;
     const windowHeight = window.innerHeight;
-    const newIndex = Math.floor(scrollTop / windowHeight / 0.2);
+    const newIndex = Math.floor(scrollTop / windowHeight / 0.15);
     setActiveIndex(newIndex % images.length);
+    scrollToIndex(newIndex % images.length);
   };
 
   useEffect(() => {
@@ -65,7 +66,7 @@ const SafePal = () => {
       <div className="relative flex items-center justify-center w-full">
         <button
           onClick={handlePrev}
-          className="absolute left-0 bg-white rounded-full p-2 lg:p-4 hidden lg:block"
+          className="absolute left-0 hidden p-2 bg-white rounded-full lg:p-4 lg:block"
         >
           {"<"}
         </button>
@@ -90,7 +91,7 @@ const SafePal = () => {
                 onClick={() => handleImageClick(index)}
               />
               {index === activeIndex && (
-                <div className="flex items-center justify-between mt-4 flex-col lg:flex-row">
+                <div className="flex flex-col items-center justify-between mt-4 lg:flex-row">
                   <div className="flex items-center gap-[5px] lg:gap-[10px] justify-center">
                     <button className="bg-[#FB3B94] text-[#fff] rounded-[15px] lg:rounded-[30px] px-[10px] lg:px-[15px] py-[5px] lg:py-[8px] font-[500] hover:scale-[1.1] duration-300 hidden lg:block">
                       Test
@@ -109,7 +110,7 @@ const SafePal = () => {
         </div>
         <button
           onClick={handleNext}
-          className="absolute right-0 bg-white rounded-full p-2 lg:p-4 hidden lg:block"
+          className="absolute right-0 hidden p-2 bg-white rounded-full lg:p-4 lg:block"
         >
           {">"}
         </button>
