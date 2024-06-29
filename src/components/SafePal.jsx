@@ -24,8 +24,12 @@ const SafePal = () => {
   };
 
   const scrollToIndex = (index) => {
-    const scrollLeft = index * 340; // Adjust based on your image width and padding
-    carouselRef.current.scrollTo({ left: scrollLeft, behavior: "smooth" });
+    const scrollLeft =
+      window.innerWidth > 640 ? index * 340 : index * (window.innerWidth - 20); // Adjust based on your image width and padding
+    carouselRef.current.scrollTo({
+      left: scrollLeft,
+      behavior: "smooth",
+    });
   };
 
   const handleScroll = () => {
@@ -56,14 +60,14 @@ const SafePal = () => {
   };
 
   return (
-    <div className="bg-black rounded-[20px] lg:rounded-[50px] min-h-[742px] px-[20px] lg:px-[50px] py-[20px]">
+    <div className="bg-black rounded-[20px] lg:rounded-[50px] min-h-[742px] sm:px-[20px] lg:px-[50px] py-[20px] flex flex-col items-center sm:block">
       <h2 className="text-white text-[30px] lg:text-[120px] font-bold">
         SafePal
       </h2>
       <p className="text-white text-[16px] lg:text-[30px] font-[600]">
         Making your crypto experience safe and fun.
       </p>
-      <div className="relative flex items-center justify-center w-full">
+      <div className="relative flex flex-col items-center justify-center flex-grow w-full">
         <button
           onClick={handlePrev}
           className="absolute left-0 hidden p-2 bg-white rounded-full lg:p-4 lg:block"
@@ -72,13 +76,12 @@ const SafePal = () => {
         </button>
         <div
           ref={carouselRef}
-          className="flex items-center justify-start w-full overflow-x-scroll custom-scrollbar"
+          className="flex items-center justify-start flex-grow w-full overflow-x-scroll custom-scrollbar"
         >
           {images.map((image, index) => (
             <div
               key={index}
-              className="p-[10px] lg:p-[30px] flex-shrink-0"
-              style={{ width: "100%", maxWidth: "340px" }} // Adjust based on your image width and padding
+              className="sm:p-[10px] lg:p-[30px] flex-shrink-0 w-[calc(100vw-20px)] flex flex-col items-center justify-center sm:block sm:w-full sm:max-w-[340px]"
             >
               <animated.img
                 style={useSpring({
