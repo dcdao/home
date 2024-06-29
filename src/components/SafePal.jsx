@@ -6,13 +6,6 @@ const SafePal = () => {
     { src: "/images/NFT/NFT_1.png", alt: "NFT 1" },
     { src: "/images/NFT/NFT_2.png", alt: "NFT 2" },
     { src: "/images/NFT/NFT_3.png", alt: "NFT 3" },
-    { src: "/images/NFT/NFT_4.png", alt: "NFT 4" },
-    { src: "/images/NFT/NFT_5.png", alt: "NFT 5" },
-    { src: "/images/NFT/NFT_6.png", alt: "NFT 6" },
-    { src: "/images/NFT/NFT_7.png", alt: "NFT 7" },
-    { src: "/images/NFT/NFT_8.png", alt: "NFT 8" },
-    { src: "/images/NFT/NFT_9.png", alt: "NFT 9" },
-    { src: "/images/NFT/NFT_10.png", alt: "NFT 10" },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -20,25 +13,16 @@ const SafePal = () => {
 
   const handleImageClick = (index) => {
     setActiveIndex(index);
-    scrollToIndex(index);
-  };
-
-  const scrollToIndex = (index) => {
-    const scrollLeft =
-      window.innerWidth > 640 ? index * 340 : index * (window.innerWidth - 20); // Adjust based on your image width and padding
-    carouselRef.current.scrollTo({
-      left: scrollLeft,
-      behavior: "smooth",
-    });
   };
 
   const handleScroll = () => {
     const scrollTop = window.scrollY;
     const windowHeight = window.innerHeight;
-    const newIndex = Math.floor(scrollTop / windowHeight / 0.15);
-    setActiveIndex(newIndex % images.length);
-    scrollToIndex(newIndex % images.length);
+    const newIndex = Math.floor(scrollTop / windowHeight / 0.3);
+    setActiveIndex(newIndex % 3);
   };
+
+  console.log(activeIndex);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -47,76 +31,65 @@ const SafePal = () => {
     };
   }, []);
 
-  const handlePrev = () => {
-    const newIndex = activeIndex === 0 ? images.length - 1 : activeIndex - 1;
-    setActiveIndex(newIndex);
-    scrollToIndex(newIndex);
-  };
-
-  const handleNext = () => {
-    const newIndex = activeIndex === images.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(newIndex);
-    scrollToIndex(newIndex);
-  };
-
   return (
-    <div className="bg-black rounded-[20px] lg:rounded-[50px] min-h-[742px] sm:px-[20px] lg:px-[50px] py-[20px] flex flex-col items-center sm:block">
-      <h2 className="text-white text-[30px] lg:text-[120px] font-bold">
+    <div className="bg-black rounded-[20px] lg:rounded-[50px] sm:min-h-[742px] sm:px-[20px] lg:px-[50px] py-[20px] flex flex-col items-center sm:items-start">
+      <h2 className="text-white text-[30px] lg:text-[120px] font-bold flex-shrink-0">
         SafePal
       </h2>
-      <p className="text-white text-[16px] lg:text-[30px] font-[600]">
+      <p className="text-white text-[16px] lg:text-[30px] font-[600] flex-shrink-0">
         Making your crypto experience safe and fun.
       </p>
       <div className="relative flex flex-col items-center justify-center flex-grow w-full">
-        <button
+        {/* <button
           onClick={handlePrev}
           className="absolute left-0 hidden p-2 bg-white rounded-full lg:p-4 lg:block"
         >
           {"<"}
-        </button>
+        </button> */}
         <div
           ref={carouselRef}
-          className="flex items-center justify-start flex-grow w-full overflow-x-scroll custom-scrollbar"
+          className="flex flex-col items-center justify-center flex-grow w-full overflow-hidden sm:flex-row"
         >
           {images.map((image, index) => (
             <div
               key={index}
-              className="sm:p-[10px] lg:p-[30px] flex-shrink-0 w-[calc(100vw-20px)] flex flex-col items-center justify-center sm:block sm:w-full sm:max-w-[340px]"
+              className="sm:p-[10px] lg:p-[30px] flex-shrink-0 w-[calc(100vw-20px)] flex flex-col items-center justify-center sm:w-full sm:max-w-[30vw]"
             >
               <animated.img
                 style={useSpring({
-                  width: index === activeIndex ? "90%" : "80%",
-                  maxWidth: index === activeIndex ? "400px" : "300px",
+                  width: index === activeIndex ? "90%" : "60%",
                 })}
                 src={image.src}
                 alt={image.alt}
                 className={`h-[300px] lg:h-[500px] object-contain cursor-pointer`}
                 onClick={() => handleImageClick(index)}
               />
-              {index === activeIndex && (
-                <div className="flex flex-col items-center justify-between mt-4 lg:flex-row">
-                  <div className="flex items-center gap-[5px] lg:gap-[10px] justify-center">
+
+              <div
+                className="flex flex-col items-center justify-center mt-4 duration-200 lg:flex-row"
+                style={{ opacity: index === activeIndex ? 1 : 0 }}
+              >
+                {/* <div className="flex items-center gap-[5px] lg:gap-[10px] justify-center flex-shrink-0">
                     <button className="bg-[#FB3B94] text-[#fff] rounded-[15px] lg:rounded-[30px] px-[10px] lg:px-[15px] py-[5px] lg:py-[8px] font-[500] hover:scale-[1.1] duration-300 hidden lg:block">
                       Test
                     </button>
                     <button className="bg-[#FB3B94] text-[#fff] rounded-[15px] lg:rounded-[30px] px-[10px] lg:px-[15px] py-[5px] lg:py-[8px] font-[500] hover:scale-[1.1] duration-300 hidden lg:block">
                       Test
                     </button>
-                  </div>
-                  <button className="bg-[white] rounded-[15px] lg:rounded-[30px] px-[20px] lg:px-[40px] py-[5px] lg:py-[8px] font-[500] hover:scale-[1.1] duration-300">
-                    View
-                  </button>
-                </div>
-              )}
+                  </div> */}
+                <button className="bg-[white] rounded-[15px] lg:rounded-[30px] px-[20px] lg:px-[40px] py-[5px] lg:py-[8px] font-[500] hover:scale-[1.1] duration-300">
+                  View
+                </button>
+              </div>
             </div>
           ))}
         </div>
-        <button
+        {/* <button
           onClick={handleNext}
           className="absolute right-0 hidden p-2 bg-white rounded-full lg:p-4 lg:block"
         >
           {">"}
-        </button>
+        </button> */}
       </div>
     </div>
   );
