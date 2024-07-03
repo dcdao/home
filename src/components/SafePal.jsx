@@ -1,28 +1,30 @@
 import { useState, useRef, useEffect } from "react";
-import { useSpring, animated } from "react-spring";
 
 const SafePal = () => {
   const images = [
     { src: "/images/NFT/NFT_1.png", alt: "NFT 1" },
     { src: "/images/NFT/NFT_2.png", alt: "NFT 2" },
     { src: "/images/NFT/NFT_3.png", alt: "NFT 3" },
+    { src: "/images/NFT/NFT_4.png", alt: "NFT 4" },
+    { src: "/images/NFT/NFT_5.png", alt: "NFT 5" },
+    { src: "/images/NFT/NFT_6.png", alt: "NFT 6" },
+    { src: "/images/NFT/NFT_7.png", alt: "NFT 7" },
+    { src: "/images/NFT/NFT_8.png", alt: "NFT 8" },
+    { src: "/images/NFT/NFT_9.png", alt: "NFT 9" },
+    { src: "/images/NFT/NFT_10.png", alt: "NFT 10" },
   ];
 
-  const [activeIndex, setActiveIndex] = useState(0);
   const carouselRef = useRef(null);
 
-  const handleImageClick = (index) => {
-    setActiveIndex(index);
-  };
+  // const handleImageClick = (index) => {
+  //   setActiveIndex(index);
+  // };
 
   const handleScroll = () => {
     const scrollTop = window.scrollY;
-    const windowHeight = window.innerHeight;
-    const newIndex = Math.floor(scrollTop / windowHeight / 0.3);
-    setActiveIndex(newIndex % 3);
+    carouselRef.current.scrollLeft =
+      scrollTop % carouselRef.current.offsetWidth;
   };
-
-  console.log(activeIndex);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -40,56 +42,23 @@ const SafePal = () => {
         Making your crypto experience safe and fun.
       </p>
       <div className="relative flex flex-col items-center justify-center flex-grow w-full">
-        {/* <button
-          onClick={handlePrev}
-          className="absolute left-0 hidden p-2 bg-white rounded-full lg:p-4 lg:block"
-        >
-          {"<"}
-        </button> */}
         <div
           ref={carouselRef}
-          className="flex flex-col items-center justify-center flex-grow w-full overflow-hidden sm:flex-row"
+          className="flex flex-col items-center justify-center flex-grow w-full overflow-x-auto sm:flex-row no-scrollBar"
         >
           {images.map((image, index) => (
             <div
               key={index}
               className="sm:p-[10px] lg:p-[30px] flex-shrink-0 w-[calc(100vw-20px)] flex flex-col items-center justify-center sm:w-full sm:max-w-[30vw]"
             >
-              <animated.img
-                style={useSpring({
-                  width: index === activeIndex ? "90%" : "60%",
-                })}
+              <img
                 src={image.src}
                 alt={image.alt}
-                className={`h-[300px] lg:h-[500px] object-contain cursor-pointer`}
-                onClick={() => handleImageClick(index)}
+                className={`h-[300px] lg:h-[28vw] object-contain cursor-pointer`}
               />
-
-              <div
-                className="flex flex-col items-center justify-center mt-4 duration-200 lg:flex-row"
-                style={{ opacity: index === activeIndex ? 1 : 0 }}
-              >
-                {/* <div className="flex items-center gap-[5px] lg:gap-[10px] justify-center flex-shrink-0">
-                    <button className="bg-[#FB3B94] text-[#fff] rounded-[15px] lg:rounded-[30px] px-[10px] lg:px-[15px] py-[5px] lg:py-[8px] font-[500] hover:scale-[1.1] duration-300 hidden lg:block">
-                      Test
-                    </button>
-                    <button className="bg-[#FB3B94] text-[#fff] rounded-[15px] lg:rounded-[30px] px-[10px] lg:px-[15px] py-[5px] lg:py-[8px] font-[500] hover:scale-[1.1] duration-300 hidden lg:block">
-                      Test
-                    </button>
-                  </div> */}
-                <button className="bg-[white] rounded-[15px] lg:rounded-[30px] px-[20px] lg:px-[40px] py-[5px] lg:py-[8px] font-[500] hover:scale-[1.1] duration-300">
-                  View
-                </button>
-              </div>
             </div>
           ))}
         </div>
-        {/* <button
-          onClick={handleNext}
-          className="absolute right-0 hidden p-2 bg-white rounded-full lg:p-4 lg:block"
-        >
-          {">"}
-        </button> */}
       </div>
     </div>
   );

@@ -20,7 +20,8 @@ function App() {
       <div className="bg-[#f0efef] px-[10px] lg:px-[50px] pb-[50px] lg:rounded-b-[100px]">
         <Header />
         <Hero />
-        <CompanySection />
+        <InfiniteText />
+        {/* <CompanySection /> */}
         <SafePal />
         <OurClients />
         {/* <Friends /> */}
@@ -30,7 +31,6 @@ function App() {
         <CuttingEdge />
       </div>
       <div>
-        <InfiniteText />
         <CollectiveBunch />
         <div className="px-[50px]">
           <LetsChat />

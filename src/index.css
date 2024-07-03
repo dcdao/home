@@ -25,3 +25,7 @@ body {
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #ff66b2;
 }
+
+.no-scrollBar::-webkit-scrollbar {
+  appearance: none;
+}

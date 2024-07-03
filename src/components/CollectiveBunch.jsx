@@ -1,6 +1,6 @@
 const CollectiveBunch = () => {
   return (
-    <div className="flex items-center justify-between flex-col lg:flex-row px-[10px] lg:px-[100px] text-white">
+    <div className="flex items-center justify-between flex-col lg:flex-row px-[10px] lg:px-[100px] lg:py-[80px] text-white">
       <div className="lg:w-[716px]">
         <p className="text-[20px] lg:text-[40px] text-center lg:text-left">
           We’re Darwinia Community DAO. A Crypto based service with brilliant
@@ -9,22 +9,26 @@ const CollectiveBunch = () => {
         <p className="text-[20px] lg:text-[40px] mt-[40px] text-center lg:text-left">
           Join Us and enjoy your Crypto journey
         </p>
-        <button className="bg-white text-black text-[16px] my-[50px] lg:my-0 w-full lg:text-[28px] font-[500] lg:w-[240px] h-[40px] lg:h-[60px] rounded-[30px] mt-[20px] hover:scale-[1.05] duration-300">
-          Join
-        </button>
       </div>
-      <ul className="flex flex-wrap items-center justify-center gap-[20px] lg:block">
-        <li className="text-[20px]">Dribbble</li>
-        <li className="text-[20px]">Instagram</li>
-        <li className="text-[20px]">X</li>
-        <li className="text-[20px]">Facebook</li>
-        <li className="text-[20px]">LinkedIn</li>
-        <li className="lg:mt-[40px] text-[20px]">Work</li>
-        <li className="lg:mb-[40px] text-[20px]">About</li>
-        <li className="text-[20px] lg:w-[233px] text-center lg:text-left">
-          Unfold HQ 5920 Pan American Blvd Suite 205, North Port, Florida, 34287
-        </li>
-      </ul>
+      <div className="flex items-center justify-center gap-[40px] my-[30px] sm:my-[40px] w-[40vw]">
+        <a href="https://twitter.com/DarwiniaNetwork" target="_blank">
+          <img src="/icons/X.svg" alt="X" className="sm:w-[80px] sm:h-[80px]" />
+        </a>
+        <a href="https://t.me/DarwiniaNetwork" target="_blank">
+          <img
+            src="/icons/Telegram.svg"
+            alt="Telegram"
+            className="sm:w-[80px] sm:h-[80px]"
+          />
+        </a>
+        <a href="https://github.com/darwinia-network" target="_blank">
+          <img
+            src="/icons/Github.svg"
+            alt="Github"
+            className="sm:w-[80px] sm:h-[80px]"
+          />
+        </a>
+      </div>
     </div>
   );
 };

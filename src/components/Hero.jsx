@@ -9,14 +9,11 @@ const Hero = () => {
         <br /> DAO
       </h1>
 
-      <div className="relative flex flex-col items-center justify-center w-[40vw] flex-shrink-0 gap-[10px] z-10">
-        <button className="w-[240px] h-[40px] rounded-[20px] text-[#000] bg-[#fff] font-[600] hover:scale-[1.05] duration-300">
-          More
-        </button>
-
-        <button className="w-[240px] h-[40px] rounded-[20px] text-[#fff] bg-[#000] font-[600] hover:scale-[1.05] duration-300">
+      <div className="relative flex flex-col items-center justify-center w-[30vw] flex-shrink-0 gap-[10px] z-10">
+        <button className="w-[10vw] h-[10vw] rounded-full text-[#000] text-[2vw] bg-[#fff] font-bold hover:w-[15vw] duration-300">
           Join
         </button>
+        <p></p>
       </div>
 
       {/* <video
