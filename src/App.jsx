@@ -1,43 +1,65 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import CompanySection from "./components/CompanySection";
-import SafePal from "./components/SafePal";
-import OurClients from "./components/OurClients";
-// import Friends from "./components/Friends";
-import InfiniteSlider from "./components/InfiniteSlider";
-// import Subscription from "./components/Subscription";
-// import Beyond from "./components/Beyond";
-import CuttingEdge from "./components/CuttingEdge";
-import InfiniteText from "./components/InfiniteText";
-import CollectiveBunch from "./components/CollectiveBunch";
-import LetsChat from "./components/LetsChat";
-// import Online from "./components/Online";
-import BigText from "./components/BigText";
+import LeftPart from "./components/leftPart";
+import { Lethargy } from "lethargy";
+import { useWheel } from "@use-gesture/react";
+import { useState } from "react";
+import Header from "./components/header";
 
 function App() {
+  const lethargy = new Lethargy();
+  const [index, setIndex] = useState(0);
+
+  const handleNextPart = () => {
+    if (index < 2) {
+      setIndex(index + 1);
+    }
+  };
+
+  const handlePrevPart = () => {
+    if (index > 0) {
+      setIndex(index - 1);
+    }
+  };
+
+  const bind = useWheel(({ event, last, memo: wait = false }) => {
+    event.stopPropagation();
+    if (!last) {
+      const s = lethargy.check(event);
+      if (s) {
+        if (!wait) {
+          if (s < 0) {
+            handleNextPart();
+          } else if (s > 0) {
+            handlePrevPart();
+          }
+          return true;
+        }
+      } else return false;
+    } else {
+      return false;
+    }
+  });
   return (
-    <>
-      <div className="bg-[#f0efef] px-[10px] lg:px-[50px] pb-[50px] lg:rounded-b-[100px]">
-        <Header />
-        <Hero />
-        <InfiniteText />
-        {/* <CompanySection /> */}
-        <SafePal />
-        <OurClients />
-        {/* <Friends /> */}
-        <InfiniteSlider />
-        {/* <Subscription /> */}
-        {/* <Beyond /> */}
-        <CuttingEdge />
+    <div
+      className="w-[100vw] h-[100vh] flex items-center justify-center"
+      {...bind()}
+    >
+      <div className="flex flex-shrink-0 w-[50vw] h-[100vh] bg-black items-center justify-start relative overflow-hidden pl-[10vw]">
+        <img
+          className="w-[15vw] h-[15vw] object-contain"
+          src="/images/DCDAO.png"
+          alt="Logo"
+        />
+        <img
+          src="/images/NFT/NFT_1.png"
+          className="w-[40vw] h-[40vw] object-contain absolute right-[-20vw] top-0 bottom-0 m-auto animate-loop-rotate rounded-full"
+          alt="dcdao nft"
+        />
       </div>
-      <div>
-        <CollectiveBunch />
-        <div className="px-[50px]">
-          <LetsChat />
-        </div>
-        <BigText />
+      <div className="flex flex-shrink-0 w-[50vw] h-[100vh] bg-white overflow-hidden relative">
+        <Header setIndex={setIndex} />
+        <LeftPart index={index} />
       </div>
-    </>
+    </div>
   );
 }
 

@@ -1,15 +1,31 @@
-const Header = () => {
+// eslint-disable-next-line react/prop-types
+export default function Header({ setIndex }) {
   return (
-    <header className="flex items-center justify-between py-[30px] relative">
-      {/* <h1 className="text-[20px] font-[700]">unfold</h1> */}
-      <a href="/">
-        <img src="/images/DCDAO.png" alt="" className="w-[100px] h-[100px]" />
-      </a>
-      <div className="flex items-end justify-center w-[140px] h-[140px] lg:w-[196px] lg:h-[300px] bg-[#FB3B94] rounded-[98px] pb-[30px] text-[40px] text-white font-bold text-center cursor-pointer hover:bg-[#000] hover:translate-y-[50px] lg:absolute top-[-200px] right-[50px] transition-all duration-300">
-        <p>Join</p>
-      </div>
-    </header>
+    <div className="flex items-center justify-center absolute top-0 right-0 left-0 m-auto w-[50vw] h-[6vw] gap-[3vw] z-20 bg-[#f3f3f3]">
+      <p
+        className="text-[1.2vw] font-bold  text-black cursor-pointer"
+        onClick={() => {
+          setIndex(0);
+        }}
+      >
+        Home
+      </p>
+      <p
+        className="text-[1.2vw] font-bold  text-black cursor-pointer"
+        onClick={() => {
+          setIndex(1);
+        }}
+      >
+        Join
+      </p>
+      <p
+        className="text-[1.2vw] font-bold  text-black cursor-pointer"
+        onClick={() => {
+          setIndex(2);
+        }}
+      >
+        Contact
+      </p>
+    </div>
   );
-};
-
-export default Header;
+}
