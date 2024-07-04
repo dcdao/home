@@ -28,21 +28,21 @@ export default function LeftPart({ index }) {
             <img
               src="/icons/X.svg"
               alt="X"
-              className="w-[4vw] h-[4vw] rounded-full shadow-[0_0_20px_0_rgba(0,0,0,0.4)]"
+              className="w-[4vw] h-[4vw] rounded-full shadow-[0_0_20px_0_rgba(0,0,0,0.4)] hover:scale-[1.1] duration-500"
             />
           </a>
           <a href="https://t.me/DarwiniaNetwork" target="_blank">
             <img
               src="/icons/Telegram.svg"
               alt="Telegram"
-              className="w-[4vw] h-[4vw] rounded-full shadow-[0_0_20px_0_rgba(0,0,0,0.4)]"
+              className="w-[4vw] h-[4vw] rounded-full shadow-[0_0_20px_0_rgba(0,0,0,0.4)] hover:scale-[1.1] duration-500"
             />
           </a>
           <a href="https://github.com/darwinia-network" target="_blank">
             <img
               src="/icons/Github.svg"
               alt="Github"
-              className="w-[4vw] h-[4vw] rounded-full shadow-[0_0_20px_0_rgba(0,0,0,0.4)]"
+              className="w-[4vw] h-[4vw] rounded-full shadow-[0_0_20px_0_rgba(0,0,0,0.4)] hover:scale-[1.1] duration-500"
             />
           </a>
         </div>

@@ -45,10 +45,11 @@ function App() {
     >
       <div className="flex flex-shrink-0 w-[50vw] h-[100vh] bg-black items-center justify-start relative overflow-hidden pl-[10vw]">
         <img
-          className="w-[15vw] h-[15vw] object-contain"
+          className="w-[10vw] h-[10vw] object-contain"
           src="/images/DCDAO.png"
           alt="Logo"
         />
+        {/* <div className="w-[2px] h-[60vh] bg-[#FF0084] ml-[5vw]"></div> */}
         <img
           src="/images/NFT/NFT_1.png"
           className="w-[40vw] h-[40vw] object-contain absolute right-[-20vw] top-0 bottom-0 m-auto animate-loop-rotate rounded-full"
