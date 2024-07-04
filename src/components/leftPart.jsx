@@ -14,8 +14,14 @@ export default function LeftPart({ index }) {
       </div>
       <div className="w-full h-[100vh] flex-shrink-0 p-[3vw] pt-[6vw] flex flex-col justify-center items-center gap-[2vw]">
         <h2 className="text-black text-[1.6vw] font-medium text-center max-w-[39vw]">
-          DC DAO is a community for holding and sharing NFTs. Join us to make
-          every thing easier.
+          DC DAO is a community for holding and sharing NFTs
+          <span className="text-[#FF0084] font-bold text-[2vw] leading-[10px]">
+            .
+          </span>{" "}
+          Join us to make every thing easier
+          <span className="text-[#FF0084] font-bold text-[2vw] leading-[10px]">
+            .
+          </span>
         </h2>
         <div className="w-[40vw] h-[2px] bg-[rgba(0,0,0,0.4)]"></div>
         <button className="w-[9vw] h-[3vw] text-[1.2vw] font-bold border-[5px] border-solid border-black hover:bg-black hover:text-white duration-300">
