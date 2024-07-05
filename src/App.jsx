@@ -3,6 +3,7 @@ import { Lethargy } from "lethargy";
 import { useWheel } from "@use-gesture/react";
 import { useState } from "react";
 import Header from "./components/header";
+import MobileContent from "./components/mobileContent";
 
 function App() {
   const lethargy = new Lethargy();
@@ -22,38 +23,40 @@ function App() {
 
   const bind = useWheel(({ event, last, memo: wait = false }) => {
     event.stopPropagation();
-    if (!last) {
-      const s = lethargy.check(event);
-      if (s) {
-        if (!wait) {
-          if (s < 0) {
-            handleNextPart();
-          } else if (s > 0) {
-            handlePrevPart();
+    if (window.innerWidth > 1024) {
+      if (!last) {
+        const s = lethargy.check(event);
+        if (s) {
+          if (!wait) {
+            if (s < 0) {
+              handleNextPart();
+            } else if (s > 0) {
+              handlePrevPart();
+            }
+            return true;
           }
-          return true;
-        }
-      } else return false;
-    } else {
-      return false;
+        } else return false;
+      } else {
+        return false;
+      }
     }
   });
 
   return (
     <div
-      className="w-[100vw] h-[100vh] flex items-center justify-center relative"
+      className="lg:w-[100vw] lg:h-[100vh] flex items-center justify-center relative"
       {...bind()}
     >
-      <div className="flex flex-shrink-0 w-[100vw] h-[100vh] bg-[#171717] items-center justify-start relative overflow-hidden pl-[12vw]">
+      <div className="flex flex-col lg:flex-row flex-shrink-0 w-[100vw] h-[100vh] bg-[#171717] items-center justify-start relative overflow-hidden lg:pl-[12vw]">
         <img
-          className="w-[10vw] h-[10vw] object-contain"
+          className="hidden lg:block w-[10vw] h-[10vw] object-contain"
           src="/images/DCDAO.png"
           alt="Logo"
         />
         {/* <div className="w-[2px] h-[60vh] bg-[#FF0084] ml-[5vw]"></div> */}
         <img
           src="/images/NFT/NFT_1.png"
-          className="w-[35vw] h-[35vw] object-cover absolute right-0 left-0 top-0 bottom-0 m-auto animate-loop-rotate rounded-full"
+          className="w-[80vw] h-[80vw] lg:w-[35vw] lg:h-[35vw] object-cover absolute right-0 left-0 bottom-[-40vw] lg:top-0 lg:bottom-0 m-auto animate-loop-rotate rounded-full"
           alt="dcdao nft"
         />
         <img
@@ -63,12 +66,18 @@ function App() {
         />
         <a
           href="https://darwinia.network/"
-          className="w-[10vw] h-[4vw] text-center cursor-pointer border-[#FF0084] text-[#ff0084] border-solid border-[4px] block absolute rotate-[-90deg] left-[2vw] text-[2vw] hover:bg-white hover:border-white hover:text-black duration-300"
+          className="hidden lg:block w-[10vw] h-[4vw] text-center cursor-pointer border-[#FF0084] text-[#ff0084] border-solid border-[4px] absolute rotate-[-90deg] left-[2vw] text-[2vw] hover:bg-white hover:border-white hover:text-black duration-300"
         >
           Darwinia
         </a>
+        {window.innerWidth < 1024 && (
+          <>
+            <Header />
+            <MobileContent />
+          </>
+        )}
       </div>
-      <div className="flex flex-shrink-0 w-[50vw] h-[100vh] overflow-y-hidden shadow-[0_0_25px_0_rgba(255,255,255,0.7)] absolute right-0 z-5 ">
+      <div className="hidden lg:flex flex-shrink-0 w-[100vw] lg:w-[50vw] lg:h-[100vh] overflow-y-hidden lg:shadow-[0_0_25px_0_rgba(255,255,255,0.7)] absolute right-0 z-5 ">
         <Header setIndex={setIndex} />
         <LeftPart index={index} />
         <div className="flex items-center justify-center absolute bottom-0 right-0 left-0 m-auto w-[50vw] h-[6vw] gap-[3vw] z-20 bg-[rgba(255,255,255,0.98)]">

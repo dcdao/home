@@ -1,5 +1,3 @@
-import { useTrail, animated } from "react-spring";
-
 // eslint-disable-next-line react/prop-types
 export default function LeftPart({ index }) {
   //   const style1 = useTrail(4, {
