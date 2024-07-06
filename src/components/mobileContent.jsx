@@ -38,7 +38,7 @@ export default function MobileContent() {
               className="w-[40px] h-[40px] rounded-full shadow-[0_0_30px_10px_rgba(0,0,0,0.4)]"
             />
           </a>
-          <a href="https://github.com/darwinia-network" target="_blank">
+          <a href="https://github.com/dcdao" target="_blank">
             <img
               src="/icons/Github.svg"
               alt="Github"
