@@ -4,9 +4,11 @@ import { useWheel } from "@use-gesture/react";
 import { useState } from "react";
 import Header from "./components/header";
 import MobileContent from "./components/mobileContent";
+import useWidth from "./hooks/useWidth";
 
 function App() {
   const lethargy = new Lethargy();
+  const width = useWidth();
   const [index, setIndex] = useState(0);
 
   const handleNextPart = () => {
@@ -23,7 +25,7 @@ function App() {
 
   const bind = useWheel(({ event, last, memo: wait = false }) => {
     event.stopPropagation();
-    if (window.innerWidth > 1024) {
+    if (width > 1024) {
       if (!last) {
         const s = lethargy.check(event);
         if (s) {
@@ -70,7 +72,7 @@ function App() {
         >
           Darwinia
         </a>
-        {window.innerWidth < 1024 && (
+        {width < 1024 && (
           <>
             <Header />
             <MobileContent />
