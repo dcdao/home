@@ -121,7 +121,11 @@ export default function LeftPart({ index }) {
           className="text-[1vw] text-black font-medium duration-500"
         >
           Funded by{" "}
-          <a href="https://darwinia.network/" className="text-[#FF0084]">
+          <a
+            target="_blank"
+            href="https://darwinia.network/"
+            className="text-[#FF0084]"
+          >
             Darwinia.Network
           </a>
         </h3>
