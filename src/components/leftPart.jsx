@@ -10,18 +10,17 @@ export default function LeftPart({ index }) {
   //   });
   return (
     <div
-      className="w-[100%] h-[200vh] flex-shrink-0 flex flex-col bg-[rgba(255,255,255)] duration-700"
+      className="w-[100%] h-[200vh] flex-shrink-0 flex flex-col bg-[#f1f1f1] duration-700"
       style={{ transform: `translateY(-${index * 100}vh)` }}
     >
       <div className="w-full h-[100vh] flex-shrink-0 p-[3vw] pt-[6vw] flex flex-col items-center justify-center gap-[2vw]">
         <div className="w-[40vw] h-[2px] bg-[rgba(0,0,0,0.4)]"></div>
-        {/* <img src="/images/hero.webp" alt="dcdao" className="w-[40vw]" /> */}
         <h1
           className="text-black text-[3vw] font-bold duration-300"
           style={{
             transform: index === 0 ? "translateY(0)" : "translateY(100%)",
             opacity: index === 0 ? 1 : 0,
-            transitionDelay: index === 0 ? "0.3s" : "0.3s",
+            transitionDelay: index === 0 ? "0.5s" : "0.3s",
           }}
         >
           Darwinia Community DAO
@@ -39,10 +38,6 @@ export default function LeftPart({ index }) {
             .
           </span>
           <br />
-          Join us now
-          <span className="text-[#FF0084] font-bold text-[2vw] leading-[10px]">
-            .
-          </span>
         </h2>
         {/* <div className="w-[40vw] h-[2px] bg-[rgba(0,0,0,0.4)]"></div> */}
         <button
@@ -51,7 +46,7 @@ export default function LeftPart({ index }) {
             opacity: index === 0 ? 1 : 0,
             transitionDelay: index === 0 ? "0.5s" : "0.3s",
           }}
-          className="w-[9vw] h-[3vw] text-[1.2vw] font-bold border-[5px] border-solid border-black hover:border-[#FF0084] hover:bg-[#FF0084] hover:text-white duration-300"
+          className="w-[9vw] h-[3vw] text-white text-[1.2vw] font-bold bg-[#ff0084] duration-300 rounded-[1.5vw]"
         >
           Join Us
         </button>

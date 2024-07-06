@@ -47,7 +47,7 @@ function App() {
       className="lg:w-[100vw] lg:h-[100vh] flex items-center justify-center relative"
       {...bind()}
     >
-      <div className="flex flex-col lg:flex-row flex-shrink-0 w-[100vw] h-[100vh] bg-[#171717] items-center justify-start relative overflow-hidden lg:pl-[12vw]">
+      <div className="flex flex-col lg:flex-row flex-shrink-0 w-[100vw] h-[100vh] bg-[#0A0A0A] lg:bg-[#171717] items-center justify-start relative lg:overflow-hidden lg:pl-[12vw]">
         <img
           className="hidden lg:block w-[10vw] h-[10vw] object-contain"
           src="/images/DCDAO.png"
@@ -56,7 +56,7 @@ function App() {
         {/* <div className="w-[2px] h-[60vh] bg-[#FF0084] ml-[5vw]"></div> */}
         <img
           src="/images/NFT/NFT_1.png"
-          className="w-[80vw] h-[80vw] lg:w-[35vw] lg:h-[35vw] object-cover absolute right-0 left-0 bottom-[-40vw] lg:top-0 lg:bottom-0 m-auto animate-loop-rotate rounded-full"
+          className="hidden lg:block w-[80vw] h-[80vw] lg:w-[35vw] lg:h-[35vw] object-cover absolute right-0 left-0 bottom-[-40vw] lg:top-0 lg:bottom-0 m-auto animate-loop-rotate rounded-full"
           alt="dcdao nft"
         />
         <img
@@ -80,11 +80,28 @@ function App() {
       <div className="hidden lg:flex flex-shrink-0 w-[100vw] lg:w-[50vw] lg:h-[100vh] overflow-y-hidden lg:shadow-[0_0_25px_0_rgba(255,255,255,0.7)] absolute right-0 z-5 ">
         <Header setIndex={setIndex} />
         <LeftPart index={index} />
-        <div className="flex items-center justify-center absolute bottom-0 right-0 left-0 m-auto w-[50vw] h-[6vw] gap-[3vw] z-20 bg-[rgba(255,255,255,0.98)]">
+        <div className="absolute top-0 bottom-0 right-[1vw] flex flex-col items-center justify-center m-auto gap-[10px]">
+          <span
+            className={
+              "block w-[10px] h-[10px] rounded-full shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] duration-300 " +
+              (index === 0 ? "bg-[#ff0084]" : "bg-black")
+            }
+          />
+          <span className="block w-[1.5px] h-[30px] bg-black" />
+          <span
+            className={
+              "block w-[10px] h-[10px] rounded-full shadow-[0_0_10px_3px_rgba(0,0,0,0.1)] duration-300 " +
+              (index === 1 ? "bg-[#ff0084]" : "bg-black")
+            }
+          />
+        </div>
+        <div
+          className="flex items-center justify-center absolute bottom-0 right-0 left-0 m-auto w-[50vw] h-[6vw] gap-[3vw] z-20 bg-[rgba(255,255,255,0.98)] duration-300 shadow-[0_0_20px_10px_rgba(0,0,0,0.1)]"
+          style={{ transform: index === 1 ? "scaleY(-1)" : "" }}
+        >
           <div
             className="w-[5.55vw] h-[2vw] bg-center absolute bottom-[4vh] right-0 left-0 m-auto cursor-pointer duration-300 origin-center animate-loop-shake"
-            onClick={index === 2 ? handlePrevPart : handleNextPart}
-            style={{ transform: index === 2 ? "scaleY(-1)" : "" }}
+            onClick={index === 1 ? handlePrevPart : handleNextPart}
           >
             <span className="block w-[3vw] h-[3px] bg-black absolute right-0 top-0 bottom-0 m-auto rotate-[-30deg]" />
             <span className="block w-[3vw] h-[3px] bg-black absolute left-0 top-0 bottom-0 m-auto rotate-[30deg]" />
