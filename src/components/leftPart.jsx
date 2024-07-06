@@ -40,16 +40,18 @@ export default function LeftPart({ index }) {
           <br />
         </h2>
         {/* <div className="w-[40vw] h-[2px] bg-[rgba(0,0,0,0.4)]"></div> */}
-        <button
+        <a
+          target="_blank"
+          href="https://darwinia.network/"
           style={{
             transform: index === 0 ? "translateY(0)" : "translateY(200%)",
             opacity: index === 0 ? 1 : 0,
             transitionDelay: index === 0 ? "0.5s" : "0.3s",
           }}
-          className="w-[9vw] h-[3vw] text-white text-[1.2vw] font-bold bg-[#ff0084] duration-300 rounded-[1.5vw]"
+          className="flex justify-center items-center cursor-pointer w-[9vw] h-[3vw] text-white text-[1.2vw] font-bold bg-[#ff0084] duration-300 rounded-[1.5vw]"
         >
           Join Us
-        </button>
+        </a>
         <div className="w-[40vw] h-[2px] bg-[rgba(0,0,0,0.4)]"></div>
       </div>
       {/* <div className="w-full h-[100vh] flex-shrink-0 p-[3vw] pt-[6vw] flex flex-col justify-center items-center gap-[2vw]"></div> */}
@@ -101,7 +103,7 @@ export default function LeftPart({ index }) {
               className="w-[4vw] h-[4vw] rounded-full shadow-[0_0_20px_0_rgba(0,0,0,0.4)] hover:scale-[1.1] duration-500"
             />
           </a>
-          <a href="https://github.com/darwinia-network" target="_blank">
+          <a href="https://github.com/dcdao" target="_blank">
             <img
               src="/icons/Github.svg"
               alt="Github"

@@ -67,6 +67,7 @@ function App() {
           alt="dcdao nft"
         />
         <a
+          target="_blank"
           href="https://darwinia.network/"
           className="hidden lg:block w-[10vw] h-[4vw] text-center cursor-pointer border-[#FF0084] text-[#ff0084] border-solid border-[4px] absolute rotate-[-90deg] left-[2vw] text-[2vw] hover:bg-white hover:border-white hover:text-black duration-300"
         >

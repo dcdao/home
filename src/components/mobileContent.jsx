@@ -15,9 +15,13 @@ export default function MobileContent() {
           className="w-[250px] h-[250px] object-cover m-auto animate-loop-rotate rounded-full my-[30px]"
           alt="dcdao nft"
         />
-        <button className="w-[180px] h-[60px] text-white text-[24px] font-bold bg-[#FF0084] rounded-[30px]">
+        <a
+          target="_blank"
+          href="https://darwinia.network/"
+          className="w-[180px] h-[60px] flex justify-center items-center text-white text-[24px] font-bold bg-[#FF0084] rounded-[30px]"
+        >
           Join Us
-        </button>
+        </a>
         <div className="w-[80vw] h-[2px] bg-[rgba(255,255,255,0.4)] my-[2vh] flex-shrink-0"></div>
         <div className="flex items-center justify-center gap-[20px] duration-500">
           <a href="https://twitter.com/DarwiniaNetwork" target="_blank">
@@ -44,7 +48,11 @@ export default function MobileContent() {
         </div>
         <h3 className="text-[18px] text-[rgba(255,255,255,0.5)] font-medium">
           Funded by{" "}
-          <a href="https://darwinia.network/" className="text-[#FF0084]">
+          <a
+            target="_blank"
+            href="https://darwinia.network/"
+            className="text-[#FF0084]"
+          >
             Darwinia.Network
           </a>
         </h3>
