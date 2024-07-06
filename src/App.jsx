@@ -2,9 +2,9 @@ import LeftPart from "./components/leftPart";
 import { Lethargy } from "lethargy";
 import { useWheel } from "@use-gesture/react";
 import { useState } from "react";
-import Header from "./components/header";
 import MobileContent from "./components/mobileContent";
 import useWidth from "./hooks/useWidth";
+import Header from "./components/header";
 
 function App() {
   const lethargy = new Lethargy();
