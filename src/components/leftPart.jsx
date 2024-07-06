@@ -42,7 +42,7 @@ export default function LeftPart({ index }) {
         {/* <div className="w-[40vw] h-[2px] bg-[rgba(0,0,0,0.4)]"></div> */}
         <a
           target="_blank"
-          href="https://darwinia.network/"
+          href="https://t.me/DarwiniaNetwork"
           style={{
             transform: index === 0 ? "translateY(0)" : "translateY(200%)",
             opacity: index === 0 ? 1 : 0,
