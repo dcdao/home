@@ -4,7 +4,7 @@ import { useWheel } from "@use-gesture/react";
 import { useState } from "react";
 import MobileContent from "./components/mobileContent";
 import useWidth from "./hooks/useWidth";
-import Header from "./components/header";
+import CustomHeader from "./components/customHeader";
 
 function App() {
   const lethargy = new Lethargy();
@@ -75,13 +75,13 @@ function App() {
         </a>
         {width < 1024 && (
           <>
-            <Header />
+            <CustomHeader />
             <MobileContent />
           </>
         )}
       </div>
       <div className="hidden lg:flex flex-shrink-0 w-[100vw] lg:w-[50vw] lg:h-[100vh] overflow-y-hidden lg:shadow-[0_0_25px_0_rgba(255,255,255,0.7)] absolute right-0 z-5 ">
-        <Header setIndex={setIndex} />
+        <CustomHeader setIndex={setIndex} />
         <LeftPart index={index} />
         <div className="absolute top-0 bottom-0 right-[1vw] flex flex-col items-center justify-center m-auto gap-[10px]">
           <span

@@ -1,5 +1,5 @@
 // eslint-disable-next-line react/prop-types
-export default function Header() {
+export default function CustomHeader() {
   return (
     <div className="flex items-center flex-shrink-0 justify-between px-[30px] lg:px-0 lg:justify-center lg:absolute top-0 right-0 left-0 lg:m-auto w-[100vw] lg:w-[50vw] h-[80px] lg:h-[6vw] gap-[30px] lg:gap-[3vw] z-20 bg-[#0A0A0A] shadow-[0_0_40px_20px_rgba(255,255,255,0.1)] lg:shadow-[0_0_20px_10px_rgba(0,0,0,0.1)] lg:bg-[rgba(255,255,255,0.98)]">
       <img
