@@ -17,7 +17,7 @@ export default function MobileContent() {
         />
         <a
           target="_blank"
-          href="https://darwinia.network/"
+          href="https://t.me/DarwiniaNetwork"
           className="w-[180px] h-[60px] flex justify-center items-center text-white text-[24px] font-bold bg-[#FF0084] rounded-[30px]"
         >
           Join Us
