@@ -1,7 +1,7 @@
 export default function MobileContent() {
   return (
     <div>
-      <div className="w-full flex-grow flex flex-col items-center bg-[#0A0A0A] justify-start gap-[20px] mt-[20px] px-[30px]">
+      <div className="w-[100vw] h-[calc(100vh-100px)] flex-grow flex flex-col items-center bg-[#0A0A0A] justify-center gap-[10px] mt-[20px] px-[30px]">
         {/* <img src="/images/hero.webp" alt="dcdao" className="w-[40vw]" /> */}
         <h1 className="text-white text-center text-[30px] font-bold duration-300">
           Darwinia Community DAO
@@ -12,7 +12,7 @@ export default function MobileContent() {
         {/* <div className="w-[40vw] h-[2px] bg-[rgba(0,0,0,0.4)]"></div> */}
         <img
           src="/images/NFT/NFT_1.png"
-          className="w-[250px] h-[250px] object-cover m-auto animate-loop-rotate rounded-full my-[40px]"
+          className="w-[250px] h-[250px] object-cover m-auto animate-loop-rotate rounded-full my-[30px]"
           alt="dcdao nft"
         />
         <button className="w-[180px] h-[60px] text-white text-[24px] font-bold bg-[#FF0084] rounded-[30px]">
