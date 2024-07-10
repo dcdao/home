@@ -2,12 +2,15 @@
 
 The website is designed to assist individuals interested in joining the Web3 community and engaging in creative activities within the Web3 environment. By joining our community, you will enter the world of Web3 and be ready to pursue your desired goals.
 
+DC DAO is Darwinia Community DAO that is a meeting point for all the individual who wants to bring upon change in Darwinia and brodely in the Web3 Space. Join Today!
+
 ## Social Links
 
 - [X](https://twitter.com/DarwiniaNetwork)
 - [Telegram](https://t.me/DarwiniaNetwork)
 - [GitHub](https://github.com/dcdao)
 - [Darwinia Website](https://darwinia.network/)
+- [Governance](https://www.tally.xyz/gov/dcdao)
 
 ## Getting Started
 
